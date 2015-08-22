@@ -1,0 +1,7 @@
+{
+  "name": "urlUtils",
+  "jspm": {
+  	"format": "es6",
+  	"registry": "jspm"
+  }
+}
