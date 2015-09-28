@@ -5,10 +5,10 @@ let urlUtils = {
 		return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
 	},
 
-	queryStringToJson: function(url = window.location.search) {
-	    if (url === '')
+	queryStringToJson: function(queryString = window.location.search) {
+	    if (queryString === '')
 	        return '';
-	    let pairs = url.slice(1).split('&'),
+	    let pairs = queryString.slice(1).split('&'),
 	    	result = {};
 	    for (var idx in pairs) {
 	        var pair = pairs[idx].split('=');
