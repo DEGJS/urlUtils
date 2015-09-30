@@ -1,3 +1,5 @@
+import objectUtils from "plugins/objectUtils";
+
 let urlUtils = {
 
 	getUrlParameter: function(name, queryString = window.location.search) {
@@ -5,7 +7,7 @@ let urlUtils = {
 		return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
 	},
 
-	queryStringToJson: function(queryString = window.location.search) {
+	queryStringToJson: function(queryString = window.location.search, normalize = true) {
 	    if (queryString === '')
 	        return '';
 	    let pairs = queryString.slice(1).split('&'),
@@ -17,7 +19,10 @@ let urlUtils = {
 	        	if (val.indexOf(',') !== -1) {
 	        		val = val.split(',');
 	        	}
-	            result[pair[0].toLowerCase()] = val;
+	        	if (normalize === true) {
+	        		val = objectUtils.normalizeValue(val);
+	        	}
+				result[pair[0]] = val;
 	        }
 	    }
 	    return result;

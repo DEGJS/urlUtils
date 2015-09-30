@@ -3,7 +3,7 @@ Utility functions for working with the browser URL.
 
 ## Available Methods
 * **getUrlParameter:** Get a named query string parameter from window URL or a string.
-* **queryStringToJson:** Create an object from a query string or window URL.
+* **queryStringToJson:** Create an object from a query string or window URL, and optionally normalize all values.
 
 ## Revision History
 * **1.0.0:** First commit.
