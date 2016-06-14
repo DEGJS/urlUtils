@@ -2,7 +2,7 @@
   "name": "urlUtils",
   "jspm": {
 	"dependencies": {
-		"objectUtils": "github:DEGJS/objectUtils@master"
+		"objectUtils": "github:DEGJS/objectUtils"
 	},
   	"format": "es6",
   	"registry": "jspm"
