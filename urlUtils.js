@@ -1,4 +1,4 @@
-import objectUtils from "plugins/objectUtils";
+import objectUtils from "DEGJS/objectUtils";
 
 let urlUtils = {
 
