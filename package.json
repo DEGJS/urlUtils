@@ -1,10 +1,30 @@
 {
-  "name": "urlUtils",
-  "jspm": {
-	"dependencies": {
-		"objectUtils": "github:DEGJS/objectUtils"
-	},
-  	"format": "es6",
-  	"registry": "jspm"
-  }
+    "name": "urlUtils",
+    "version": "1.0.0",
+    "description": "",
+    "keywords": [
+        "DEGJS"
+    ],
+    "author": {
+        "name": "Aaron Ladage",
+        "email": "aladage@degdigital.com",
+        "url": "http://aaronladage.com"
+    },
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/DEGJS/urlUtils.git"
+    },
+    "bugs": "https://github.com/DEGJS/urlUtils/issues",
+    "jspm": {
+        "registry": "jspm",
+        "format": "es6",
+        "main": "urlUtils.js",
+        "directories": {
+            "lib": "src"
+        },
+        "dependencies": {
+            "objectUtils": "github:DEGJS/objectUtils@1.0.0"
+        }
+    }
 }
