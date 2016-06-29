@@ -25,7 +25,7 @@
             "lib": "src"
         },
         "dependencies": {
-            "objectUtils": "github:DEGJS/objectUtils@1.0.0"
+            "DEGJS/objectUtils": "github:DEGJS/objectUtils@^1.0.0"
         }
     }
 }
