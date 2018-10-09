@@ -3,7 +3,7 @@
     "version": "2.0.0",
     "description": "Utility functions for working with the browser URL.",
     "keywords": [
-    	"url",
+        "url",
         "DEGJS"
     ],
     "author": {
@@ -17,15 +17,29 @@
         "url": "https://github.com/DEGJS/urlUtils.git"
     },
     "bugs": "https://github.com/DEGJS/urlUtils/issues",
-    "jspm": {
-        "registry": "jspm",
-        "format": "es6",
-        "main": "urlUtils.js",
-        "directories": {
-            "lib": "src"
-        },
-        "dependencies": {
-            "DEGJS/objectUtils": "github:DEGJS/objectUtils@^1.0.0"
-        }
+    "files": [
+        "src"
+    ],
+    "main": "src/urlUtils",
+    "scripts": {
+        "test": "jest"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.1.0",
+        "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+        "@babel/preset-env": "^7.1.0",
+        "babel-core": "^7.0.0-bridge.0",
+        "babel-jest": "^23.6.0",
+        "jest": "^23.6.0"
+    },
+    "jest": {
+        "testPathIgnorePatterns": [
+            "/node_modules/"
+        ]
+    },
+    "babel": {
+        "presets": [
+            "@babel/preset-env"
+        ]
     }
 }
