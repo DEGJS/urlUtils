@@ -41,8 +41,16 @@ function queryStringToObj(queryString = window.location.search, normalize = true
 
 };
 
+function objToQueryString(obj) {
+	const keys = Object.keys(obj) || [];
+	const retVal = keys.map(key => `${key}=${encodeURIComponent(obj[key])}`).join('&');
+
+	return `?${retVal}`;
+}
+
 export {
 	getUrlParameter,
 	queryStringToJson,
-	queryStringToObj
+	queryStringToObj,
+	objToQueryString
 };
