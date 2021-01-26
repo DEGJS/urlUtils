@@ -1,7 +1,7 @@
 # urlUtils
-[![Build Status](https://travis-ci.com/DEGJS/urlUtils.svg?branch=master)](https://travis-ci.com/DEGJS/urlUtils)
-
 Utility functions for working with the browser URL. These functions are primarily to be used with partial URLs. For work with full URLs, consider using [the URL interface](https://developer.mozilla.org/en-US/docs/Web/API/URL).
+
+**THIS REPOSITORY IS NO LONGER MAINTAINED**
 
 ## Install
 UrlUtils is an ES6 module. Consequently, you may need an ES6 transpiler ([Babel](https://babeljs.io/) is a nice one) as part of your Javascript workflow.
